@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 - CSS Styling</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2d3631;
+            padding: 50px 20px;
+        }
+        .quest-card {
+            max-width: 700px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .btn-secondary {
+            background-color: #636e72;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #4a5458;
+            transform: translateY(-2px);
+        }
+        .btn-dark {
+            background-color: #2d3436;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-dark:hover {
+            background-color: #1e2426;
+            transform: translateY(-2px);
+        }
+        .instruction-text {
+            color: #dfe6e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card quest-card">
+            <div class="card-body p-4">
+                <span class="badge bg-primary mb-3">Level 2</span>
+                <h2 class="card-title mb-3">CSS Styling</h2>
+                <p class="card-text text-muted">This level shows basic CSS: background, card styling, and button hover.</p>
+                
+                <div class="d-flex gap-2 mt-4">
+                    <button class="btn btn-secondary flex-fill" onclick="window.location.href='level1.html'">Back</button>
+                    <button class="btn btn-dark flex-fill" onclick="window.location.href='level3.html'">Next Level</button>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-center mt-3 instruction-text">Screenshot #2: Make sure your CSS changes are visible.</p>
+    </div>
+</body>
+</html>
